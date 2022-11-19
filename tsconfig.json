@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "dist/",
+        "sourceMap": true
+    },
+    "entryFile" : "index",
+    "include": [
+        "src/**/*.ts",
+        "index.ts"
+    ],
+    "exclude": [
+        "typings/*",
+        "node_modules"
+    ]
+}

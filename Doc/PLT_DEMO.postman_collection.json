@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "1bdd2b25-34e2-4db4-85fc-36f922e4ad4f",
+		"name": "PLT_DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1106245"
+	},
+	"item": [
+		{
+			"name": "1. Check Server Connectivity",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Success - Connectivity",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/testConnection",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"testConnection"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-RMCZOOdxZLbnOtUwugdrbupGAks\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Nov 2022 14:34:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Successfully Connected!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "2. Get All Stocks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/stock/list",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"stock",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success - Get Stock",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/stock/list",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"stock",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3960"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f78-T2Er95qnrnb1pnCDgUm3vei44rQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Nov 2022 14:40:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Issue while getting stock details\",\n    \"data\": [\n        {\n            \"sku\": \"LTV719449/39/39\",\n            \"stock\": 8525\n        },\n        {\n            \"sku\": \"CLQ274846/07/46\",\n            \"stock\": 8414\n        },\n        {\n            \"sku\": \"SXB930757/87/87\",\n            \"stock\": 3552\n        },\n        {\n            \"sku\": \"PGL751486/42/83\",\n            \"stock\": 1484\n        },\n        {\n            \"sku\": \"MRP846986/84/16\",\n            \"stock\": 2739\n        },\n        {\n            \"sku\": \"MDH133414/85/14\",\n            \"stock\": 7287\n        },\n        {\n            \"sku\": \"HPL673886/40/76\",\n            \"stock\": 607\n        },\n        {\n            \"sku\": \"ZCP838287/58/07\",\n            \"stock\": 9145\n        },\n        {\n            \"sku\": \"PWX000842/03/47\",\n            \"stock\": 8197\n        },\n        {\n            \"sku\": \"XOE089797/10/74\",\n            \"stock\": 2226\n        },\n        {\n            \"sku\": \"ENN169733/05/69\",\n            \"stock\": 9560\n        },\n        {\n            \"sku\": \"BGZ200017/86/40\",\n            \"stock\": 4856\n        },\n        {\n            \"sku\": \"JSZ454994/85/17\",\n            \"stock\": 8748\n        },\n        {\n            \"sku\": \"ELK743612/34/57\",\n            \"stock\": 6616\n        },\n        {\n            \"sku\": \"CPF246874/77/33\",\n            \"stock\": 5363\n        },\n        {\n            \"sku\": \"MQO013465/10/41\",\n            \"stock\": 3787\n        },\n        {\n            \"sku\": \"WUU364727/47/81\",\n            \"stock\": 3859\n        },\n        {\n            \"sku\": \"DDB197432/70/91\",\n            \"stock\": 2810\n        },\n        {\n            \"sku\": \"PRO481716/07/95\",\n            \"stock\": 2980\n        },\n        {\n            \"sku\": \"QQO675265/24/21\",\n            \"stock\": 7748\n        },\n        {\n            \"sku\": \"SCN373096/15/63\",\n            \"stock\": 7915\n        },\n        {\n            \"sku\": \"XEU169192/11/27\",\n            \"stock\": 872\n        },\n        {\n            \"sku\": \"RTA872532/57/24\",\n            \"stock\": 8252\n        },\n        {\n            \"sku\": \"TVV531854/13/03\",\n            \"stock\": 4830\n        },\n        {\n            \"sku\": \"UTF434696/37/18\",\n            \"stock\": 7382\n        },\n        {\n            \"sku\": \"YKT849667/75/10\",\n            \"stock\": 8355\n        },\n        {\n            \"sku\": \"MQI908424/70/79\",\n            \"stock\": 3060\n        },\n        {\n            \"sku\": \"YPU346838/42/51\",\n            \"stock\": 2434\n        },\n        {\n            \"sku\": \"ZES180290/58/46\",\n            \"stock\": 777\n        },\n        {\n            \"sku\": \"ZZY781086/99/42\",\n            \"stock\": 1996\n        },\n        {\n            \"sku\": \"EDI062104/16/63\",\n            \"stock\": 5995\n        },\n        {\n            \"sku\": \"QWP084011/40/33\",\n            \"stock\": 2256\n        },\n        {\n            \"sku\": \"FKO136294/98/95\",\n            \"stock\": 7252\n        },\n        {\n            \"sku\": \"OVY768503/84/79\",\n            \"stock\": 8501\n        },\n        {\n            \"sku\": \"SMJ806557/56/05\",\n            \"stock\": 6463\n        },\n        {\n            \"sku\": \"SJH146913/58/03\",\n            \"stock\": 2219\n        },\n        {\n            \"sku\": \"JKF995902/28/73\",\n            \"stock\": 941\n        },\n        {\n            \"sku\": \"IQZ340003/37/30\",\n            \"stock\": 1811\n        },\n        {\n            \"sku\": \"OPC383154/11/25\",\n            \"stock\": 9453\n        },\n        {\n            \"sku\": \"QPD162093/97/59\",\n            \"stock\": 9191\n        },\n        {\n            \"sku\": \"WNG145754/36/02\",\n            \"stock\": 8798\n        },\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"stock\": 5085\n        },\n        {\n            \"sku\": \"LLG964262/20/67\",\n            \"stock\": 4109\n        },\n        {\n            \"sku\": \"BAJ526361/18/08\",\n            \"stock\": 9840\n        },\n        {\n            \"sku\": \"YGH750695/17/53\",\n            \"stock\": 4181\n        },\n        {\n            \"sku\": \"LCF762340/73/78\",\n            \"stock\": 617\n        },\n        {\n            \"sku\": \"VMH129044/23/71\",\n            \"stock\": 7297\n        },\n        {\n            \"sku\": \"RIR591697/29/61\",\n            \"stock\": 2430\n        },\n        {\n            \"sku\": \"KDM516407/46/14\",\n            \"stock\": 8350\n        },\n        {\n            \"sku\": \"AFF976624/30/90\",\n            \"stock\": 8439\n        },\n        {\n            \"sku\": \"QKH540824/67/11\",\n            \"stock\": 4761\n        },\n        {\n            \"sku\": \"GKQ314619/44/04\",\n            \"stock\": 7819\n        },\n        {\n            \"sku\": \"IZP721309/74/90\",\n            \"stock\": 126\n        },\n        {\n            \"sku\": \"OMH974988/04/66\",\n            \"stock\": 5218\n        },\n        {\n            \"sku\": \"NDW013510/50/42\",\n            \"stock\": 9864\n        },\n        {\n            \"sku\": \"KZK692833/24/76\",\n            \"stock\": 7224\n        },\n        {\n            \"sku\": \"MMU823900/96/22\",\n            \"stock\": 7725\n        },\n        {\n            \"sku\": \"NAX148363/42/24\",\n            \"stock\": 7715\n        },\n        {\n            \"sku\": \"TIN917385/73/82\",\n            \"stock\": 6013\n        },\n        {\n            \"sku\": \"GXC407349/62/88\",\n            \"stock\": 4769\n        },\n        {\n            \"sku\": \"KPV897515/43/20\",\n            \"stock\": 9980\n        },\n        {\n            \"sku\": \"NSW555582/99/27\",\n            \"stock\": 5276\n        },\n        {\n            \"sku\": \"TVU730483/47/65\",\n            \"stock\": 992\n        },\n        {\n            \"sku\": \"HPX415896/42/97\",\n            \"stock\": 9451\n        },\n        {\n            \"sku\": \"KED089097/68/09\",\n            \"stock\": 4914\n        },\n        {\n            \"sku\": \"APM103457/39/27\",\n            \"stock\": 3026\n        },\n        {\n            \"sku\": \"FZV366142/87/47\",\n            \"stock\": 4697\n        },\n        {\n            \"sku\": \"JGH448863/97/72\",\n            \"stock\": 6470\n        },\n        {\n            \"sku\": \"HCN631514/18/05\",\n            \"stock\": 2226\n        },\n        {\n            \"sku\": \"DHJ381555/46/84\",\n            \"stock\": 9361\n        },\n        {\n            \"sku\": \"XZF231780/94/75\",\n            \"stock\": 8462\n        },\n        {\n            \"sku\": \"SRF164713/20/36\",\n            \"stock\": 6191\n        },\n        {\n            \"sku\": \"WBF948633/60/34\",\n            \"stock\": 4058\n        },\n        {\n            \"sku\": \"PQW737989/43/91\",\n            \"stock\": 2814\n        },\n        {\n            \"sku\": \"HXL707218/62/28\",\n            \"stock\": 7341\n        },\n        {\n            \"sku\": \"TZH873296/06/42\",\n            \"stock\": 1126\n        },\n        {\n            \"sku\": \"UMH915687/29/24\",\n            \"stock\": 511\n        },\n        {\n            \"sku\": \"SVP461621/17/23\",\n            \"stock\": 2501\n        },\n        {\n            \"sku\": \"RCD438149/42/77\",\n            \"stock\": 9034\n        },\n        {\n            \"sku\": \"ILJ610772/87/04\",\n            \"stock\": 6633\n        },\n        {\n            \"sku\": \"EMN370166/29/48\",\n            \"stock\": 857\n        },\n        {\n            \"sku\": \"GPV709367/41/53\",\n            \"stock\": 3602\n        },\n        {\n            \"sku\": \"JPT097835/14/99\",\n            \"stock\": 2703\n        },\n        {\n            \"sku\": \"KGD740425/40/48\",\n            \"stock\": 9097\n        },\n        {\n            \"sku\": \"NMK838808/89/94\",\n            \"stock\": 9842\n        },\n        {\n            \"sku\": \"EEB324132/63/63\",\n            \"stock\": 7498\n        },\n        {\n            \"sku\": \"OYG464088/98/45\",\n            \"stock\": 398\n        },\n        {\n            \"sku\": \"DHJ138836/02/43\",\n            \"stock\": 1866\n        },\n        {\n            \"sku\": \"ISF099639/86/90\",\n            \"stock\": 4862\n        },\n        {\n            \"sku\": \"DTW874360/97/81\",\n            \"stock\": 270\n        },\n        {\n            \"sku\": \"YGU851012/53/29\",\n            \"stock\": 4154\n        },\n        {\n            \"sku\": \"ULA310345/04/94\",\n            \"stock\": 1868\n        },\n        {\n            \"sku\": \"YON323215/74/41\",\n            \"stock\": 7927\n        },\n        {\n            \"sku\": \"DOK019240/66/49\",\n            \"stock\": 7709\n        },\n        {\n            \"sku\": \"NPR640416/53/91\",\n            \"stock\": 3231\n        },\n        {\n            \"sku\": \"VYM838980/39/17\",\n            \"stock\": 4620\n        },\n        {\n            \"sku\": \"SAL508741/19/43\",\n            \"stock\": 2245\n        },\n        {\n            \"sku\": \"SXV420098/71/68\",\n            \"stock\": 746\n        },\n        {\n            \"sku\": \"TVN783304/18/16\",\n            \"stock\": 8079\n        },\n        {\n            \"sku\": \"HGG795032/35/91\",\n            \"stock\": 4009\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "3. Get Stock Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/stock/get?sku=SXK331510/08/41",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"stock",
+						"get"
+					],
+					"query": [
+						{
+							"key": "sku",
+							"value": "SXK331510/08/41"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success - Get Stock Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/stock/get?sku=SXK331510/08/41",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"stock",
+								"get"
+							],
+							"query": [
+								{
+									"key": "sku",
+									"value": "SXK331510/08/41"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "405"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"195-QAPo7ToO9qvGmwEUioQnfVGmGQw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Nov 2022 03:10:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Stock detail listed\",\n    \"data\": {\n        \"sku\": \"SXK331510/08/41\",\n        \"stock\": 5085,\n        \"transactions\": [\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 1\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 2\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 3\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 8\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 2\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 4\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "4. Get transaction Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sku\":\"LTV719449/39/39\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}/transaction/get",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"transaction",
+						"get"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success - Get transaction Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sku\":\"LTV719449/39/39\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/transaction/get?sku=SXK331510/08/41",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"transaction",
+								"get"
+							],
+							"query": [
+								{
+									"key": "sku",
+									"value": "SXK331510/08/41"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "351"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15f-LWt+q3xh982405nofyqNOwUE9tI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Nov 2022 03:13:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Stock detail listed\",\n    \"data\": [\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"type\": \"order\",\n            \"qty\": 1\n        },\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"type\": \"order\",\n            \"qty\": 2\n        },\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"type\": \"order\",\n            \"qty\": 3\n        },\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"type\": \"order\",\n            \"qty\": 8\n        },\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"type\": \"order\",\n            \"qty\": 2\n        },\n        {\n            \"sku\": \"SXK331510/08/41\",\n            \"type\": \"order\",\n            \"qty\": 4\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "localhost:3000",
+			"type": "string"
+		}
+	]
+}
