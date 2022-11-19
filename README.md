@@ -28,7 +28,7 @@ cd <Cloned Directory> && npm install
 ```sh
 cd <Cloned Directory>/Doc/PLT_DEMO.postman_collection.json
 ```
-[![N|Solid](https://i.postimg.cc/SQtRJscG/Screenshot-2022-11-19-at-20-07-33.png)]
+![N|Solid](https://i.postimg.cc/SQtRJscG/Screenshot-2022-11-19-at-20-07-33.png)
 
 4. Start Server
 
@@ -60,7 +60,7 @@ npm run test
 ```sh
 npm run test-coverage
 ```
-[![N|Solid](https://i.postimg.cc/9FRMThpH/Screenshot-2022-11-19-at-20-12-14.png)]
+![N|Solid](https://i.postimg.cc/9FRMThpH/Screenshot-2022-11-19-at-20-12-14.png)
 ___
 
 ### ✨Happy Screening ✨
