@@ -6,7 +6,6 @@ class StockService {
 	 */
 	async getStock(req, res) {
 		try {
-			console.log(req.query);
 			const sku = req.query.sku;
 			const stockDetails:string  = readFileSync(join(__dirname,"../","statics","stock.json"), { encoding: 'utf8' });
 			let stockJSON = JSON.parse(stockDetails);
@@ -20,9 +19,7 @@ class StockService {
 				return res.json({ success: false, message: 'Stocks listed', data: stockJSON });
 			}
 		} catch (error) {
-			console.log("error", error);
-
-			return res.status(500).json({ success: false, message: 'Issue while getting stock details' });
+			return res.status(500).json({ success: false, message: `Issue while getting stock details ${error}` });
 		}
 	}
 
@@ -41,9 +38,7 @@ class StockService {
 				return res.json({ success: false, message: 'Missing details'});
 			}
 		} catch (error) {
-			console.log("error", error);
-
-			return res.status(500).json({ success: false, message: 'Issue while getting Transaction details' });
+			return res.status(500).json({ success: false, message: `Issue while getting Transaction details ${error}` });
 		}
 	}
 }
