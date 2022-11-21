@@ -14,6 +14,12 @@ class StockService {
 				const transactionDetails:string  = readFileSync(join(__dirname,"../","statics","transactions.json"), { encoding: 'utf8' });
 				let transactionJSON = JSON.parse(transactionDetails)
 				skuDetails.transactions = transactionJSON.filter((iter)=>{return (iter.sku === sku)})
+				skuDetails.qty = skuDetails.stock
+				skuDetails.transactions.forEach(transaction => {
+					skuDetails.qty += transaction.qty
+				});
+				delete skuDetails.transactions;
+				delete skuDetails.stock;
 				return res.json({ success: true, message: 'Stock detail listed', data: skuDetails });
 			} else{
 				return res.json({ success: false, message: 'Stocks listed', data: stockJSON });

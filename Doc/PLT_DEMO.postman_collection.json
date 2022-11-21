@@ -10,7 +10,16 @@
 			"name": "1. Check Server Connectivity",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{local}}/testConnection",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"testConnection"
+					]
+				}
 			},
 			"response": [
 				{
@@ -217,15 +226,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "405"
+							"value": "92"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"195-QAPo7ToO9qvGmwEUioQnfVGmGQw\""
+							"value": "W/\"5c-3fooMiZutr7JqnwcGZzeqgCBTuA\""
 						},
 						{
 							"key": "Date",
-							"value": "Sat, 19 Nov 2022 03:10:26 GMT"
+							"value": "Mon, 21 Nov 2022 10:55:00 GMT"
 						},
 						{
 							"key": "Connection",
@@ -237,7 +246,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"success\": true,\n    \"message\": \"Stock detail listed\",\n    \"data\": {\n        \"sku\": \"SXK331510/08/41\",\n        \"stock\": 5085,\n        \"transactions\": [\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 1\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 2\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 3\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 8\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 2\n            },\n            {\n                \"sku\": \"SXK331510/08/41\",\n                \"type\": \"order\",\n                \"qty\": 4\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"success\": true,\n    \"message\": \"Stock detail listed\",\n    \"data\": {\n        \"sku\": \"SXK331510/08/41\",\n        \"qty\": 5105\n    }\n}"
 				}
 			]
 		},
