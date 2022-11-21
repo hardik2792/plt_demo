@@ -62,7 +62,7 @@ npm run test
 ```sh
 npm run test-coverage
 ```
-![N|Solid](https://i.postimg.cc/9FRMThpH/Screenshot-2022-11-19-at-20-12-14.png)
+[![Screenshot-2022-11-21-at-17-21-27.png](https://i.postimg.cc/wTgY5JZZ/Screenshot-2022-11-21-at-17-21-27.png)](https://postimg.cc/Th7sfyRJ)
 ___
 
 ### ✨Happy Screening ✨
