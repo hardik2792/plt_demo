@@ -1,5 +1,7 @@
 # Stock Listing
 
+**Please refer `src/stock.helper.ts` file for expected function**
+
 ### Prerequisite
 
 - NodeJS

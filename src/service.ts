@@ -33,7 +33,7 @@ class StockService {
 				const transactions = transactionJSON.filter((iter)=>{return (iter.sku === sku)})
 				return res.json({ success: true, message: 'Transaction detail listed', data: transactions });
 			} else{
-				return res.json({ success: false, message: 'Missing details'});
+				throw new Error("Missing Details");
 			}
 		} catch (error) {
 			return res.status(500).json({ success: false, message: `Issue while getting Transaction details ${error}` });

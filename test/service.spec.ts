@@ -51,6 +51,12 @@ describe("Stock service", () => {
         expect(data.data).to.have.property("transactions");
     })
 
+    it('Should fail for missing stock details', async () => {
+        const { data } = await axios.get(`${serverURL}/stock/get?sku=SXK331510/08/4`);
+        expect(data).to.have.property("success");
+        expect(data).to.have.property("message");
+    })
+
     it('Should succeed for transaction details', async () => {
         const { data } = await axios.get(`${serverURL}/transaction/get?sku=SXK331510/08/41`)
         expect(data).to.have.property("success");
@@ -59,4 +65,9 @@ describe("Stock service", () => {
         expect(data.data).to.be.an("array");
     })
 
+    it('Should fail for missing details', async () => {
+        const { data } = await axios.get(`${serverURL}/transaction/get`);
+        expect(data).to.have.property("success");
+        expect(data).to.have.property("message");
+    })
 })
