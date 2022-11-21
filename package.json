@@ -11,6 +11,7 @@
     "report-dir": "./output/coverage"
   },
   "scripts": {
+    "start": "npm run build && node dist",
     "build": "tsc --project './tsconfig.json' && mkdir ./dist/statics  &&  cp ./statics/* ./dist/statics",
     "dev": "tsc --project './tsconfig.json' --watch & NODE_ENV=development nodemon dist",
     "test": "cross-env APP_SOURCE_DIR=$INIT_CWD/src USE_AUTH=false npx mocha -r ts-node/register test/**/*.spec.ts",
