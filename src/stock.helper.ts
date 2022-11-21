@@ -11,7 +11,11 @@ const getDetails = async(sku)=>{
         skuDetails.transactions = transactionJSON.filter((iter)=>{return (iter.sku === sku)})
         skuDetails.qty = skuDetails.stock
         skuDetails.transactions.forEach(transaction => {
-            skuDetails.qty += transaction.qty
+            if(transaction.type=== "refund"){
+                skuDetails.qty += transaction.qty
+            } else if(transaction.type=== "order"){
+                skuDetails.qty -= transaction.qty
+            }
         });
         delete skuDetails.transactions;
         delete skuDetails.stock;
